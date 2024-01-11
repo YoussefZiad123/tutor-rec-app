@@ -3,13 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import TutorPreferenceScreen from './pages/prefScreen'
+import { Box } from '@mui/material';
+import RecommendationScreen from './pages/recScreen';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+      <TutorPreferenceScreen />
+      <RecommendationScreen />
+    </Box>
+
   </React.StrictMode>
 );
 
